@@ -9,6 +9,20 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
-
+.controller('View1Ctrl', ['$scope', function($scope) {
+    $scope.firstname = {
+        text: 'firstname'
+    }
+    $scope.lastname = {
+        text: 'lastname'
+    }
+    $scope.street = {
+        text: 'street'
+    }
+    $scope.city = {
+        text: 'city'
+    }
+    $scope.zip = {
+        text: 'zip'
+    }
 }]);
